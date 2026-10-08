@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use JusticeAxis, please cite the paper."
+title: "JusticeAxis: Benchmarking Legal Judgment between Rigid Rule Application and Ungrounded Discretion"
+type: dataset
+authors:
+  - family-names: Tu
+    given-names: Zhengkai
+  - family-names: Zhang
+    given-names: Mingda
+  - family-names: Wang
+    given-names: Zijia
+  - family-names: Tang
+    given-names: Xiaoying
+  - family-names: Huang
+    given-names: Jimmy
+repository-code: "https://github.com/beita6969/JusticeAxis"
+url: "https://huggingface.co/datasets/beita6969/justiceaxis-256"
+preferred-citation:
+  type: article
+  title: "JusticeAxis: Benchmarking Legal Judgment between Rigid Rule Application and Ungrounded Discretion"
+  authors:
+    - family-names: Tu
+      given-names: Zhengkai
+    - family-names: Zhang
+      given-names: Mingda
+    - family-names: Wang
+      given-names: Zijia
+    - family-names: Tang
+      given-names: Xiaoying
+    - family-names: Huang
+      given-names: Jimmy
+  journal: "arXiv preprint arXiv:2610.00353"
+  year: 2026
+  url: "https://arxiv.org/abs/2610.00353"
