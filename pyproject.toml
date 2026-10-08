@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "justiceaxis-eval"
+version = "1.0.0"
+description = "Evaluation metrics for the JusticeAxis benchmark"
+readme = "docs/evaluation.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+hub = ["datasets"]
+
+[tool.setuptools]
+packages = ["justiceaxis_eval"]

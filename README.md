@@ -162,6 +162,18 @@ print(task["record_id"], json.loads(task["input_json"])["task"]["instruction"][:
 print(reference["available"], reference["recorded"]["outcome"] if reference["available"] else None)
 ```
 
+## Evaluation
+
+The metrics of the paper (charge and family accuracy, disposition and sentence accuracy, the conditional accuracies, the
+outcome distance and nearest anchor, and Pol) are implemented in [`justiceaxis_eval`](justiceaxis_eval):
+
+```bash
+python -m justiceaxis_eval --template predictions.jsonl     # one row per task
+python -m justiceaxis_eval --predictions predictions.jsonl --out report.json
+```
+
+Details, the prediction format and the tie rules are in [docs/evaluation.md](docs/evaluation.md).
+
 ## Repository layout
 
 ```
@@ -171,6 +183,10 @@ CITATION.cff
 assets/                          figures from the paper
 docs/data_format.md              fields and structure of a case record
 examples/load_justiceaxis.py     load the dataset and fetch one case's media
+examples/predictions_example.jsonl   example predictions for the evaluation code
+justiceaxis_eval/                evaluation metrics of the paper
+tests/test_metrics.py            checks of the metric arithmetic
+docs/evaluation.md               prediction format, metrics and tie rules
 ```
 
 ## Scope and limitations
